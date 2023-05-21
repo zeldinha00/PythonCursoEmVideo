@@ -9,7 +9,7 @@ def leiaInt(mensagem):
             valor = int(input(mensagem))
             return valor
         except ValueError:
-            print("Valor inválido. Digite um número inteiro válido.")
+            print(f"\033[1;31mValor inválido. Digite um número inteiro válido.\033[m")
 
 n = leiaInt('Digite um número inteiro: ')
 print("Você digitou:", n)

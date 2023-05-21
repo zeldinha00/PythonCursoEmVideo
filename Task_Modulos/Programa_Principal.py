@@ -13,10 +13,11 @@
     que mostre na tela algumas informações geradas pelas funções que já temos no módulo criado até aqui
 
 """
-import ultilitarios
+from funcionalidades import moeda
+from funcionalidades import dado
 
-num = float(input("Digite o preço: R$ "))
-ultilitarios.resumo(num)
+num = dado.leiaDinheiro("Digite o preço: R$ ")
+moeda.resumo(num)
 
 
 
